@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/tea-cup-spoon-saucer-for-653fe8e539c970.26001591.jpg"
+      type="image/x-icon"
+    />
+<link rel="stylesheet" href="media.css">
+    <title>Leo Teapoz Elementor</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="logo">
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt=""
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div
+                class="d-flex justify-content-around w-100 align-items-center flex-md-column flex-lg-row flex-sm-column"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SHOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PAGES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BLOGS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="last-icons d-flex">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="
+                      color: aliceblue;
+                      font-size: 25px;
+                      padding-right: 10px;
+                    "
+                  ></i>
+                  <i
+                    class="fa-regular fa-user"
+                    style="
+                      color: aliceblue;
+                      font-size: 25px;
+                      padding-right: 10px;
+                    "
+                  ></i>
+
+                  <i
+                    class="fa-regular fa-heart"
+                    style="
+                      color: aliceblue;
+                      font-size: 25px;
+                      padding-right: 10px;
+                    "
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                  ></i>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            style="color: black"
+                            class="modal-title fs-5 fw-bold"
+                            id="exampleModalLabel"
+                          >
+                            WishList
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body modal-body-whislist"></div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-dismiss="modal"
+                          >
+                            Okay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ---------------------------  -->
+                  <div class="Products-num position-relative">
+                    <p
+                      class="bg-danger rounded-5 text-center position-absolute ms-2 mt- w-75"
+                    >
+                      0
+                    </p>
+                    <i
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      class="fa-solid fa-bag-shopping"
+                      style="
+                        color: aliceblue;
+                        font-size: 25px;
+                        padding-right: 10px;
+                        cursor: pointer;
+                      "
+                    ></i>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5 fw-bold"
+                            id="exampleModalLabel"
+                            style="color: black"
+                          >
+                            Shopping List
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body modal-body-shopping"></div>
+                        <div class="modal-footer d-flex flex-column">
+                          <div class="d-flex">
+                            <p style="color: black">Total Budget :</p>
+                            <p class="totalPrice" style="color: black">
+                              <span style="color: green">$</span>0
+                            </p>
+                          </div>
+                          <hr />
+                          <div class="d-flex justify-content-around w-50">
+                            <button
+                              type="button"
+                              class="btn btn-danger"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <a href="form.html">
+                              <button type="button" class="btn btn-success">
+                                Buy Now
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- -----------------------------------------  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="contanier ">
+          <div class="para w-100 ms-lg-1 ms-md-3 ms-sm-5">
+            <small>ORGANIC GREEN TEA</small>
+            <h1 class="">Start Your</h1>
+            <h1>Relaxing Life</h1>
+            <h1>Today</h1>
+            <p>The wonderful taste of life</p>
+            <button class="align-self-start">
+              Shop Now <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------- Welcome to our store- -->
+
+    <section class="part-2">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center mt-5 w-100">
+          <div class="part-2pcontent">
+            <small>ABOUT US</small>
+            <h1>Welcome to</h1>
+            <h1>Our Tea Store</h1>
+            <p class="w-50">
+              We are a family run company founded on a passion for tea. Our
+              Chairman made a promise to never sell tea he wouldn’t drink
+              athome. Learn how we stay true to
+              <span class="d-flex justify-content-center">
+                those values in everything we do.</span
+              >
+            </p>
+          </div>
+          <button class="shopBtn mb-2">
+            Shop The Collection<i class="fa-solid fa-angle-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------- shop our teas -->
+
+    <section class="shop-teas">
+      <div class="container">
+        <div class="shop-content mt-5">
+          <div class="shop-header">
+            <h1>Shop Our Teas</h1>
+          </div>
+          <div class="shop-content-cards mt-2 d-flex flex-column">
+            <ul class="nav justify-content-center ul">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="newIn"
+                  >New-in</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="best">Best Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="Popular">Most Popular</a>
+              </li>
+            </ul>
+            <div
+              class="cards w-100 d-flex justify-content-between flex-wrap p-4"
+              style="gap: 30px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------- baneer tea  -->
+    <section class="banner">
+      <div class="container">
+        <div class="w-50 d-flex justify-content-center">
+          <div class="banner-content mt-5">
+            <h1>Exquisite Taste, Refreshing Blends.</h1>
+            <p>Popular flavored tea you must try.</p>
+            <a href="#">Learn More<i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------------- Browse By Category --------------- -->
+
+    <section class="Browse-by-Category w-100 mt-5">
+      <div class="d-flex justify-content-center w-100">
+        <div class="Browse-by-Category-content">
+          <div class="header-content d-flex flex-column align-items-center">
+            <h1>Browse By Category</h1>
+            <a href="#" class="mb-4 mt-3"
+              >View All products<i class="fa-solid fa-angle-right ms-1"></i
+            ></a>
+          </div>
+          <div class="text-content d-flex flex-wrap w-100 p-2">
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_16.avif"
+                class="card-img img-fluid"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Organic Teas <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_17.avif"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Iced Teas <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_18.avif"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Tea Bags <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_19.avif"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Classic Teas <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_20.avif"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Loose Leaf <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 29rem">
+              <img
+                src="./images/teapoz_image_16.avif"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <p class="card-text mt-5 fs-3">
+                  Vegan Teas <i class="fa-solid fa-angle-right ms-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------- take a trip -->
+
+    <section
+      class="Take-a-Trip d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center w-100">
+          <div class="TakeTrip">
+            <div class="tripContent">
+              <small class="mb-2">Take a trip</small>
+              <h1>Straight from the</h1>
+              <h1>field to your cup</h1>
+              <p>
+                Independently owned, direct trade importer of organic teas and
+                botanicals. Inspired by tradition and global culinary arts.
+              </p>
+              <button class="shopBtn mb-lg-2 mb-md-2 mb-sm-2">
+                Shop The Collection<i class="fa-solid fa-angle-right ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------------  Popular Tea Brands  -->
+    <section class="Popular-Tea-Brands">
+      <div class="popular-content w-100 align-items-center d-flex flex-column">
+        <div class="popular-headings mt-5">
+          <h3>Popular Tea Brands</h3>
+        </div>
+        <div
+          class="popular-brands w-100 d-flex flex-lg-row flex-md-wrap flex-sm-wrap"
+        >
+          <img
+            class="img-fluid"
+            src="./images/1.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(1,this)"
+            onmouseleave="OriginalImage(1,this)"
+          />
+          <img
+            class="img-fluid"
+            src="./images/2.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(2,this)"
+            onmouseleave="OriginalImage(2,this)"
+          />
+          <img
+            class="img-fluid"
+            src="./images/3.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(3,this)"
+            onmouseleave="OriginalImage(3,this)"
+          />
+          <img
+            class="img-fluid"
+            src="./images/4.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(4,this)"
+            onmouseleave="OriginalImage(4,this)"
+          />
+          <img
+            class="img-fluid"
+            src="./images/1.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(5,this)"
+            onmouseleave="OriginalImage(5,this)"
+          />
+          <img
+            class="img-fluid"
+            src="./images/2.1-manu_default.jpg"
+            alt=""
+            onmouseover="changImage(6,this)"
+            onmouseleave="OriginalImage(6,this)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------- why we are great----------------- -->
+
+    <section class="great">
+      <!-- <div class="container"> -->
+      <div class="row gap-lg-0 gap-md-1 row-gap-sm-1">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="statements">
+            <h6>WHY WE’RE GREAT</h6>
+            <h1>Crafted by Leading</h1>
+            <h1>Tea Experts</h1>
+            <p>
+              Hand blended herbals & premium loose-leaf teas for body, mind &
+              spirit. Whether you are a lifestyle tea drinker or exploring your
+              first cup, we’ve got a brew for you.
+            </p>
+          </div>
+          <div class="statements-img">
+            <img src="images/tea.webp" class="img-fluid" alt="" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="tea-handpicked w-100">
+            <div
+              class="tea-handpicked-container d-flex flex-lg-row flex-md-column flex-sm-column"
+            >
+              <div class="handpicked">
+                <div class="tea-svg">
+                  <img src="images/teapoz_icon_1.svg" alt="" />
+                  <h5>Handpicked Tea</h5>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available.
+                  </p>
+                </div>
+                <!-- ------- -->
+
+                <!-- ----------- -->
+                <div class="tea-svg">
+                  <img src="images/teapoz_icon_3.svg" alt="" />
+                  <h5>Packaged Fresh at the Source</h5>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit consequor.
+                  </p>
+                </div>
+              </div>
+              <!-- ------------------ -->
+              <div class="handpicked">
+                <div class="tea-svg">
+                  <img src="images/teapoz_icon_2.svg" alt="" />
+                  <h5>Climate & Plastic Neutral</h5>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available.
+                  </p>
+                </div>
+                <!-- ------- -->
+
+                <!-- ----------- -->
+                <div class="tea-svg four">
+                  <img src="images/teapoz_icon_4.svg" alt="" />
+                  <h5>Shipped Direct to Your</h5>
+                  <h5>Doorstep</h5>
+                  <p>Velit officia consequat duis enim velit mollit.</p>
+                </div>
+              </div>
+              <!-- ----------------------------------------------- -->
+            </div>
+          </div>
+          <!-- ------------ -->
+
+          <div
+            class="chef d-flex flex-lg-row flex-md-column flex-sm-column ms-lg-5 ms-md-5 ms-sm-4"
+          >
+            <div class="chef-content">
+              <h1>Master Tea Taster Selections</h1>
+              <p>
+                We protect those ingredients with premium foil packaging to lock
+                in freshness and flavor, so you get the best tea experience
+                every time.
+              </p>
+              <a href="#"> View All products ></a>
+            </div>
+            <div class="chef-img">
+              <img src="images/chef.webp" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------------- -->
+    <section class="opinions">
+      <div class="container">
+        <div class="carousal-container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex" style="gap: 20px">
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Fast delivery, excellent packaging and high quality
+                      products, what else can one wish for. The tea has a lovely
+                      flavour. This is a must go place if you are interested in
+                      or want to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-1.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Mark Weals</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-bottom: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “It was a quick, efficient, accurate transaction. The BEST
+                      kind, of course! Small offerings for tasting are a great
+                      idea. Favorites are available in 16 0z packages, perfect.”
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-5.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Elien Watrson</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Great, excellent packaging and high quality products,
+                      what else can one wish for. The tea has a lovely flavour.
+                      This is a must go place if you are interested in or want
+                      to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-2.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Jhon Smith</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex" style="gap: 20px">
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Fast delivery, excellent packaging and high quality
+                      products, what else can one wish for. The tea has a lovely
+                      flavour. This is a must go place if you are interested in
+                      or want to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-3.webp"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Ben Peter</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-bottom: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “It was a quick, efficient, accurate transaction. The BEST
+                      kind, of course! Small offerings for tasting are a great
+                      idea. Favorites are available in 16 0z packages, perfect.”
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-1.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Mark Weals</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Great, excellent packaging and high quality products,
+                      what else can one wish for. The tea has a lovely flavour.
+                      This is a must go place if you are interested in or want
+                      to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-4.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Eman Emam</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex" style="gap: 20px">
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Fast delivery, excellent packaging and high quality
+                      products, what else can one wish for. The tea has a lovely
+                      flavour. This is a must go place if you are interested in
+                      or want to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-1.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Mark Weals</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-bottom: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “It was a quick, efficient, accurate transaction. The BEST
+                      kind, of course! Small offerings for tasting are a great
+                      idea. Favorites are available in 16 0z packages, perfect.”
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-5.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Ema Watrson</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rounded-2 p-4"
+                    style="border: 3px solid green; border-top: none"
+                  >
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">
+                      “Great, excellent packaging and high quality products,
+                      what else can one wish for. The tea has a lovely flavour.
+                      This is a must go place if you are interested in or want
+                      to discover teas!
+                    </p>
+
+                    <div class="card-body">
+                      <div class="info d-flex" style="gap: 10px">
+                        <div
+                          class="div"
+                          style="
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                          "
+                        >
+                          <img
+                            class="img-fluid"
+                            src="./images/person-2.jpg"
+                            alt=""
+                            style="width: 100%; height: 100%"
+                          />
+                        </div>
+                        <div
+                          class="d-flex flex-column justify-content-end ms-3 fw-bold"
+                          style="line-height: 0.5"
+                        >
+                          <h6>Zein Malek</h6>
+                          <h6 style="color: #8cbc4f">verified purchased</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------- -->
+    <!-- ------------------------------------------------- Follow Us -->
+    <section class="Follow-Us mt-5 mb-md-5 mb-sm-5">
+      <div class="follow-us-content d-flex flex-column">
+        <div class="follow-headings w-100">
+          <h3 class="mb-5 fw-bold" style="color: rgb(25, 74, 53)">Follow Us</h3>
+        </div>
+        <div class="follow-container w-100  position-relative">
+          <div class="teaIMG me-2 position-absolute d-lg-block d-md-none d-sm-none">
+            <img class="img-fluid " src="./images/15_1 (1).avif" alt="" />
+          </div>
+          <div
+            class="grey-container w-100  mt-5 d-flex justify-content-center align-items-center"
+          >
+            <div class="grey-para w-25 ms-5">
+              <h4 class="fw-bold">Join the Tea Club</h4>
+              <p>
+                You may unsubscribe at any moment. For that purpose, please find
+                our contact info in the legal notice.
+              </p>
+            </div>
+            <form action="" class="w-50 d-flex flex-wrap">
+              <input
+                type="text"
+                class="p-3 w-75"
+                placeholder="Your email address"
+              />
+              <button class="px-5 py-3">Subscribe</button>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------  -->
+    <!-- ---------------------------------- quality -->
+    <section class="quality  w-100 h-100">
+      <div class="container w-100 h-100">
+        <div
+          class="quality-content mt-sm-2 d-flex flex-lg-row flex-md-column flex-sm-column mt-md-4"
+        >
+          <div class="quality-1 d-flex align-items-center flex-column">
+            <img src="images/teapoz_image_trolley.svg" alt="" />
+            <h3 class="free">FREE</h3>
+            <h3>SHIPPING</h3>
+          </div>
+          <!--     -----    -->
+          <div class="quality-1 d-flex align-items-center flex-column">
+            <img src="images/teapoz_image_tea-pack.svg" alt="" />
+            <h3 class="free">100% HAND</h3>
+            <h3>PACKED</h3>
+          </div>
+          <div class="quality-1 d-flex align-items-center flex-column">
+            <img src="images/teapoz_image_card.svg" alt="" />
+            <h3 class="free">SECURED</h3>
+            <h3>PAYMENT</h3>
+          </div>
+          <div class="quality-1 d-flex align-items-center flex-column">
+            <img src="images/teapoz_imagr_quality.svg " alt="" />
+            <h3 class="free">QUALITY</h3>
+            <h3>GUARANTEE</h3>
+          </div>
+          <div class="quality-1 no d-flex align-items-center flex-column">
+            <img src="images/teapoz_image_headphone.svg" alt="" />
+            <h3 class="free">CUSTOMER</h3>
+            <h3>SERVICE</h3>
+          </div>
+          <!-- -------------- -->
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------- footer ----------------- -->
+
+    <footer class="d-flex flex-column">
+      <div
+        class="footer-content d-flex justify-content-around flex-lg-row flex-md-column flex-sm-column"
+      >
+        <!-- <div class="container"> -->
+        <div class="content-1">
+          <img src="images/logo2.jpg" alt="" />
+        </div>
+        <div class="content-1">
+          <h6>ABOUT</h6>
+          <ul>
+            <li><a href="#">Company</a></li>
+
+            <li><a href="#"> FAQs</a></li>
+
+            <li><a href="#">Quality Gift</a></li>
+
+            <li><a href="#">Cards</a></li>
+
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="content-1">
+          <h6>Shop</h6>
+          <ul>
+            <li><a href="#"> Loose Leaf Tea </a></li>
+
+            <li><a href="#"> Green Teas </a></li>
+
+            <li><a href="#">Packaged Teas</a></li>
+
+            <li><a href="#"> Teaware </a></li>
+
+            <li><a href="#"> Tea Gifts </a></li>
+
+            <li><a href="#">Iced Tea</a></li>
+          </ul>
+        </div>
+        <div class="content-1">
+          <h6>Help Center</h6>
+          <ul>
+            <li><a href="#">Delivery Information</a></li>
+
+            <li><a href="#"> Terms & Conditions </a></li>
+
+            <li><a href="#">Returns & Refunds </a></li>
+
+            <li><a href="#">Privacy Notice </a></li>
+
+            <li><a href="#">Shopping FAQs</a></li>
+          </ul>
+        </div>
+        <div class="content-1">
+          <h6>get in touch</h6>
+          <p class="pp">
+            2972 Westheimer Rd. Santa Ana,<br />
+            Illinois 85486 <br />
+            support@example.com
+          </p>
+          <p class="mt-3">Need help? Call us.</p>
+          <a href="#" class="phone">0124 456 6789</a>
+        </div>
+        <!-- ------------------- -->
+        <!-- </div> -->
+      </div>
+      <div class="payment w-100">
+        <div class="container">
+          <div class="d-flex justify-content-center w-100">
+            <section class="payment-content w-100 p-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <small class="p-2">PAYMENTS &nbsp; WE &nbsp;ACCEPT</small>
+                <img
+                  src="./images/payment-img_1.avif"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 mt-3">
+        <p class="fw-bold" style="color: rgb(151, 151, 151)">
+          Copyright © 2023 Teapoz. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="./js/all.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="tea.js"></script>
+  </body>
+</html>

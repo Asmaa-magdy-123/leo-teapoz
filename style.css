@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+
+#shoppingCart:hover{
+    background-color: #8cbc4f;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#shoppingCart{
+    padding: 0px 10px;
+}
+#starIcon{
+    width: 15px;
+    height: 15px;
+    color: rgb(233, 233, 3);
+}
+.main{
+    width: 100%;
+    min-height: 87vh;
+    background-image: url("images/teapoz_slider_04.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+/* .container-fluid{
+    display: flex;
+    justify-content: space-between;
+} */
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.logo{
+    margin-top: 0.7%;
+    padding-right: 10px;
+}
+.navbar{
+    min-height: 18%;
+    width: 100%;
+    box-shadow: 1px 1px 1px  rgba(212, 211, 211,0.2);
+}
+.navbar-brand{
+    padding-right:10px;
+}
+.navbar-nav li a{
+    color: rgb(255, 255, 255);
+    
+
+
+}
+
+.last-icons{
+    color: aliceblue;
+
+} 
+.last-icons i{
+    color: aliceblue;
+    font-size: 50px;
+    padding-right: 3px;
+}
+.content{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+   
+    /* margin-top: 6%;
+    margin-left: 11%; */
+
+}
+.content .para{
+    color: aliceblue;
+    /* width: 60%; */
+}
+.content .para h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+.content .para small{
+color: rgb(3, 182, 3);
+}
+.para button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: small;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.para button:hover{
+    background-color: #8cbc4f;
+    color: white;
+
+}
+.part-2{
+    
+    width: 100%;
+    min-height: 400px;
+    background-image: url("images/teapoz_image_15.webp");
+    background-size: cover;
+ 
+
+}
+.part-2pcontent{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+}
+.part-2pcontent small{
+    color: #8cbc4f;
+}
+.part-2pcontent h1{
+    color: white;
+    font-weight: bold;
+}
+.part-2pcontent p{
+    color: white;
+    
+}
+.shopBtn{
+    padding: 18px 30px;
+    background-color: rgba(25, 74, 53, 0);
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #8cbc4f;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.shopBtn:hover{
+    background-color: #8cbc4f;
+}
+/* ----------------------------------- shop our teas */
+.shop-teas{
+    width: 100%;
+    min-height: 100vh;
+}
+.shop-teas .container{
+    height: auto;
+}
+.shop-content{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.shop-header h1{
+    font-size: 50px;
+    color: rgb(25, 74, 53);
+}
+/* .shop-content-cards{
+    min-height: 100vh;
+
+} */
+.shop-content-cards ul li {
+    padding: 0px 10px ; 
+}
+.shop-content-cards ul li a, .shop-content-cards ul li a:hover{
+    color: black;
+}
+.active, .active:visited{
+    color:#8cbc4f;
+    border-bottom: 1px solid #8cbc4f;
+}
+
+/* ---------------------------------------------- banner */
+.banner{
+    width: 100%;
+    min-height: 40vh;
+    background-image: url("images/teapoz_banner_03.webp");
+
+
+}
+.banner-content{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 60%;
+    
+}
+
+.banner-content h1{
+    font-weight: bolder;
+}
+.banner-content a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.banner-content a:hover{
+    color: #8cbc4f;
+}
+.header-content a{
+    color: #8cbc4f;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.header-content a:hover{
+    color: orange;
+}
+.header-content h1{
+    color: rgb(25, 74, 53);
+    font-weight: 800;
+    font-size: 45px;
+}
+.text-content{
+    gap: 30px;
+}
+.card-text{
+    font-weight: bold;
+    transition: 0.2s;
+}
+.card-text:hover{
+    color: #8cbc4f;
+    cursor: pointer;
+}
+.card {
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+  }
+  
+  .card-img {
+    transition: transform 0.5s ease; 
+  }
+  
+  .card:hover .card-img {
+    transform: scale(1.1); 
+  }
+  .card-img{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .Take-a-Trip{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("./images/teapoz_image_12.webp");
+  }
+  .tripContent{
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+ .TakeTrip{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .tripContent small{
+color: #8cbc4f;
+text-transform: uppercase;
+letter-spacing: 4px; 
+}
+.tripContent h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 900 ;
+}
+.tripContent p{
+    color: white;
+}
+.Popular-Tea-Brands{
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(25, 74, 53);
+}
+.popular-headings h3{
+    color: white;
+    font-weight: bold;
+}
+.Follow-Us{
+    width: 100%;
+    min-height: 50vh;
+}
+.teaIMG {
+    width: 17%;
+    height: 55%;
+}
+.teaIMG img{
+    width: 100%;
+    height: 100%;
+}
+.grey-container{
+    background-color: rgb(239, 239, 239);
+    min-height: 200px;
+}
+
+form button{
+    /* margin-left: -5px; */
+    background-color: #8cbc4f;
+    color: white;
+    text-transform: uppercase;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: none;
+
+}
+form button:hover{
+    background-color: black;
+    color: #8cbc4f;
+    cursor: pointer;
+}
+form input{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+}
+.grey-para{
+    padding: 20px;
+}
+/* ----------------------------- opinions ------------------------- */
+.opinions{
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 3%;
+
+}
+
+.fa-star{
+    color: rgb(240, 240, 3);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+.great{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+    overflow: hidden;
+    padding: 20px;
+
+
+}
+.statements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.statements h1{
+    font-size: 60px;
+    color: rgb(25, 74, 53);
+    font-weight: bold;
+
+}
+.statements h6{
+    color: #8cbc4f;
+}
+.statements p{
+    width: 110%;
+}
+
+.tea-handpicked{
+    min-width: 95%;
+    min-height: 60%;
+    background-color:rgb(239, 239, 239);
+    margin-left: 50px;
+    display: flex;
+ justify-content: center; 
+     /* align-items: start;  */
+}
+.tea-handpicked-container{
+    display: flex;
+    justify-content: center;
+     margin: 10%; 
+    
+
+}
+.handpicked{
+    display: flex;
+    /* height: 200px; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* align-items: start; */
+    /* width: 50%; */
+    
+    
+}
+.tea-svg{
+    padding: 10px;
+}
+.tea-svg h5{
+    font-family: "Oswald";
+}
+.tea-svg img{
+    padding: 10px;
+
+}
+
+/* ----------------- chef */
+
+.chef-img{
+    width: 40%;
+
+    
+   /* position: absolute; */
+   /* right: 0; */
+   /* top: 0; */
+   margin-top: -50px;
+   /* margin-left: -50px; */
+   padding: 10px;
+   /* overflow: hidden; */
+
+
+   
+}
+/* .chef-img img{
+    /* width: 70%; */
+    /* height: 100%; */
+/* } */ 
+
+
+.chef-content{
+    width: 50%;
+    margin-top: 70px;
+
+}
+.chef-content h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(25, 74, 53); 
+    font-weight: bold;
+}
+.chef-content a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+
+/* ---------------------- opinions */
+.opinions{
+    margin-top: 10%;
+    width: 100%;
+    min-height: 60vh;
+
+}
+/* ----------------------------------------- quality */
+.quality{
+    /* width: 100%; */
+    min-height: 27vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    background-image: url("./images/teapoz_pattern_03.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+}
+.quality-content{
+    width: 100%;
+    min-height: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+.quality-1{
+    border-right: 1px solid grey;
+    padding-right: 50px;
+}
+.quality-1 h3{
+    font-family: "Tajawal";
+    font-size: 20PX;
+
+}
+.free {
+    padding-top: 10px;
+    
+
+
+}
+.no{
+    border: none;
+
+}
+/* ------------------------------------------------ footer ---------------- */
+footer{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 70vh;
+}
+.footer-content{
+    width: 100%;
+    min-height: 50vh;
+    
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-1 h6{
+    font-weight: bold;
+    color: gray;
+ 
+}
+.content-1 ul , .pp{
+    margin-top: 50px;
+    list-style: none;
+    /* display: flex;
+   flex-direction: column;
+    justify-content: start; */
+   
+    
+}
+.content-1 ul li{
+    padding: 5px 5px 5px 0;
+   
+}
+.content-1 ul li a ,.content-1 a {
+    text-decoration: none;
+    color: black;
+    
+
+}
+.content-1 .phone{
+    color: #8cbc4f;
+    font-size: 20px;
+}
+/* ------------------ payment */
+.payment{
+    height: 15vh;
+    background-color: rgb(239, 239, 239);
+}
+.payment-content small{
+    color: grey;
+}
+
+.details p{
+    color: black;
+}
+.fa-trash{
+    color: #777975;
+}
+.fa-heart{
+    color: red;
+}
+.fa-heart:hover{
+    color: #8cbc4f;
+}
+.fa-trash:hover{
+    color: #141412;
+    cursor: pointer;
+}
+.xnumbers p:nth-child(1), .xnumbers p:nth-child(2) {
+    color: red;
+}
+.xnumbers p:nth-child(3){
+    color: #8cbc4f;
+}
+.modal-body-whislist p{
+    color: #141412;
+}
+h6{
+    font-weight: bold;
+}
+
+

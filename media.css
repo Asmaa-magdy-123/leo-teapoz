@@ -1,0 +1,57 @@
+@media (max-width:570px) {
+    h1{
+        font-size: 2.5rem;
+    }
+   /* .card-img-overlay p{
+        font-size: 0.4rem;
+    } */
+     .header-content h1{
+        font-size: 2rem;
+     }
+     .card-img-overlay  {
+        display: flex;
+        justify-content: center;
+     }
+     .tripContent h1{
+        font-size: 1.8rem;
+     }
+     .tripContent p{
+        font-size: 1rem;
+     }
+     .popular-brands{
+        display: flex;
+        flex-direction: column;
+     }
+     .statements h1{
+        font-size: 1.5rem;
+     }
+    .statements p{
+        font-size: 0.7rem;
+    }
+    .chef{
+        flex-direction: column;
+    }
+    .chef-img{
+        width: 100%;
+        height: 100vh;
+    }
+    .teaIMG{
+        display: none;
+    }
+    .quality-content{
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+   
+    .content{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .content p, .content small{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
