@@ -564,7 +564,7 @@ footer{
 }
 /* ------------------ payment */
 .payment{
-    height: 15vh;
+    min-height: 15vh;
     background-color: rgb(239, 239, 239);
 }
 .payment-content small{
