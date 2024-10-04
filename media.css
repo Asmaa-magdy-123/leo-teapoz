@@ -1,4 +1,4 @@
-@media (max-width:570px) {
+@media (max-width:799px) {
     h1{
         font-size: 2.5rem;
     }
@@ -12,11 +12,20 @@
         display: flex;
         justify-content: center;
      }
+     .tripContent{
+        width: 100%;
+    }
      .tripContent h1{
         font-size: 1.8rem;
+        
+     }
+     .tripContent button{
+        width: 80%;
+        padding: 6px;
+        font-size: 15px;
      }
      .tripContent p{
-        font-size: 1rem;
+        font-size: 0.8rem;
      }
      .popular-brands{
         display: flex;
@@ -56,3 +65,14 @@
         font-size: 1rem;
     }
 }
+
+/* @media (max-width:400) {
+ 
+    .tripContent h1{
+        font-size: 0.1rem;
+        
+        
+        
+     }
+    
+} */
